@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/schoolwebsite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="JavaScript/Script.js"></script>
+</head>
+<body>
+    <section class="subHeader"> 
+        <nav>
+            <a href="Webpages/schoolwebsite.html"><img src="Images/images.jpeg"></a>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()"></i><!--check icon functionality-->
+                <ul>
+                    <li><a href="Webpages/schoolwebsite.html">Home</a></li>
+                    <li><a href="Webpages/About.html">About</a></li>
+                    <li><a href="Webpages/course.html">Courses</a></li>
+                    <li><a href="Webpages/blog.html">Blog</a></li>
+                    <li><a href="Webpages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <h1>Bachelor Of Computing</h1>
+    </section>
+    <section class="description">
+        <h1>Description of Course:</h1>
+        <p>The Bachelor of Computing program offers a comprehensive education in the fundamentals of computer science 
+                            and information technology. Designed to equip students with both theoretical knowledge and practical skills, 
+                            this degree covers key areas such as programming, software development, data structures, algorithms, and cybersecurity. 
+                            Students will have the opportunity to engage in hands-on projects, internships, and collaborative learning experiences, 
+                            preparing them for dynamic careers in the ever-evolving tech industry. Whether you're interested in software engineering, 
+                            data analytics, or network security, the Bachelor of Computing provides a strong foundation to launch a successful career in technology.
+        </p>
+    </section>
+    <section class ="modules">
+
+        <!--display in a table-->
+    </section>
+    <section class="studyGuide">
+        <!--downloadable documents + print course details-->
+    </section>
+    <section class="enrollment">
+
+        <!--enrollment + timer-->
+    </section>
+
+    <section class="call">
+        <h1>Enroll in any one of our courses <br>from anywhere in South Africa </h1>
+        <a href="contact.html" class="heroBtn">CONTACT US</a>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>a premier institution dedicated to advancing technology and innovation.<br>
+            As a leading technology university, we are committed to cultivating the next<br>
+            generation of tech leaders, innovators, and entrepreneurs. Our mission is to provide a<br>
+            transformative education that equips students with the knowledge, skills,<br> 
+            and experience needed to excel in a rapidly evolving technological landscape.</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-star"></i> By group members</p><!--fix this later-->
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

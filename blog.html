@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/schoolwebsite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="JavaScript/Script.js"></script>
+</head>
+<body>
+    <section class="subHeader"> 
+        <nav>
+            <a href="Webpages/schoolwebsite.html"><img src="Images/images.jpeg"></a>
+            article class="searchContainer"> <!--Also putting in the resuts of the search-->
+                <div class= "searchEngine">
+                    <input type="text" name="SearchInput" id="SearchInput" placeholder="Search course..." >
+                    <i class="fa-solid fa-magnifying-glass" style="color: black;" onclick="SearchCourses()"></i>
+                </div>
+                <div class="searchResult" hidden="true" >
+                    <div id="card" hi>
+                        <h6 font-size="2rem">#</h6>
+                        <p></p>
+        </div>
+        </div>
+        </article>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()"></i><!--check icon functionality-->
+                <ul>
+                    <li><a href="Webpages/schoolwebsite.html">Home</a></li>
+                    <li><a href="Webpages/About.html">About</a></li>
+                    <li><a href="Webpages/course.html">Courses</a></li>
+                    <li><a href="Webpages/blog.html">Blog</a></li>
+                    <li><a href="Webpages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <h1>Blog</h1>
+    </section>
+    <!--blog page-->
+    <section class="blogContent">
+        <div class="row">
+            <div class="blogLeft">
+                
+                <img src="Images/How To Stand Out At A Career Fair.jpeg">
+                <h2>The Career Fair held every quarter</h2>
+                <p>a premier event held every semester that connects students with leading technology companies and industry professionals. 
+                    This highly anticipated fair provides an exceptional opportunity for students to explore career paths, network with potential 
+                    employers, and discover the latest job and internship openings in the tech sector.<br>
+                    <br>
+                    <strong>Highlights:</strong>
+                    <ul>
+                        <li>Industry Leading Companies: <br>Meet representatives from top tech companies, startups, and innovative firms seeking talented graduates and interns. Engage in meaningful conversations and learn about various career opportunities across diverse tech disciplines.
+                        </li>
+                        <li>Networking Opportunities: <br>Build valuable connections with recruiters, hiring managers, and industry experts. Participate in one-on-one conversations, attend company presentations, and exchange contact information to pave the way for future career opportunities.
+                        </li>
+                        <li>Career Workshops and Panels: <br>Attend informative workshops and panel discussions led by industry professionals. Topics include resume building, interview techniques, career planning, and emerging tech trends. Gain insights and practical advice to enhance your job search and career development.
+                        </li>
+                        <li>On-the-Spot Interviews: <br>Some companies offer on-the-spot interviews for qualifying candidates. Prepare to showcase your skills and knowledge in real-time and potentially secure interviews or job offers directly at the fair.
+                        </li>
+                        <li>Resume Review Services: <br>Take advantage of resume review stations where career counselors and industry experts provide personalized feedback on your resume and cover letter, helping you make a strong impression with potential employers.
+                        </li>
+                        <li>Interactive Exhibits: Explore interactive exhibits and demonstrations showcasing the latest technological innovations and projects from participating companies. Discover cutting-edge tools and technologies that are shaping the future of the tech industry.
+                            
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="blogRight">
+                
+                <img src="Images/How To Host A PTA Outdoor Movie Night.jpeg">
+                <h3>Recreational Activities organised by the Student Body</h3>
+                <p>
+                    our Student Body Outdoor Movie Night, a beloved tradition that brings the campus community together<br> 
+                    for a fun and relaxing experience. Set against the backdrop of our beautiful campus green,<br> 
+                    this event promises a perfect blend of entertainment, camaraderie, and the great outdoors.<br>
+                    <br>
+                   <h2>Event Highlights</h2>
+                    <ul>
+                        <li>Feature Film: Enjoy a popular movie on a large, high-definition screen, with a selection that caters to a variety of tastes, from classic favorites to the latest blockbusters. The film will be shown with high-quality sound and a clear view from every angle.
+                        </li>
+                        <li>Picnic-Style Seating: Bring your own blanket or lawn chair and cozy up on the grass for a comfortable movie-watching experience. We'll also provide a few extra blankets and seating options for those who need them.
+                        </li>
+                        <li>Food and Drinks: Savor a range of delicious snacks and beverages available for purchase, including popcorn, candy, nachos, and refreshing drinks. Special dietary options will also be available to accommodate various preferences.
+                        </li>
+                        <li>Pre-Movie Activities: Arrive early to enjoy pre-movie activities such as trivia games, photo booths, and live music performed by student bands. These activities are designed to create a festive atmosphere and build excitement before the movie begins.
+                        </li>
+                        <li>Community Atmosphere: This event is a great opportunity to unwind and socialize with fellow students, faculty, and staff. Whether you're catching up with friends or making new ones, the relaxed outdoor setting encourages conversation and connection.
+                        </li>
+                    </ul>
+                </p>
+                <br>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="call">
+        <h1>Enroll in any one of our courses <br>from anywhere in South Africa </h1>
+        <a href="Webpages/contact.html" class="heroBtn">CONTACT US</a>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>a premier institution dedicated to advancing technology and innovation.<br>
+            As a leading technology university, we are committed to cultivating the next<br>
+            generation of tech leaders, innovators, and entrepreneurs. Our mission is to provide a<br>
+            transformative education that equips students with the knowledge, skills,<br> 
+            and experience needed to excel in a rapidly evolving technological landscape.</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-star"></i> By group members</p><!--fix this later-->
+    </section>
+    <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+    </script>
+    
+</body>
+</html>

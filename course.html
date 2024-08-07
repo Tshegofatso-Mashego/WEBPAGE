@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/schoolwebsite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="JavaScript/Script.js"></script>
+</head>
+<body>
+    <section class="subHeader"> 
+        <nav>
+            <a href="Web pages/schoolwebsite.html"><img src="Images/images.jpeg"></a>
+            <article class="searchContainer"> <!--Also putting in the resuts of the search-->
+                <div class= "searchEngine">
+                    <input type="text" name="SearchInput" id="SearchInput" placeholder="Search course..." >
+                    <i class="fa-solid fa-magnifying-glass" style="color: black;" onclick="SearchCourses()"></i>
+                </div>
+                <div class="searchResult" hidden="true" >
+                    <div id="card" hi>
+                        <h6 font-size="2rem">#</h6>
+                        <p></p>
+        </div>
+        </div>
+        </article>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()"></i><!--check icon functionality-->
+                <ul>
+                    <li><a href="Web pages/schoolwebsite.html">Home</a></li>
+                    <li><a href="Web pages/About.html">About</a></li>
+                    <li><a href="Web pages/course.html">Courses</a></li>
+                    <li><a href="Web pages/blog.html">Blog</a></li>
+                    <li><a href="Web pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!--cContent-->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>At Belgium Campus, we offer a diverse range of cutting-edge courses designed to equip students with the skills and knowledge required to excel in the technology sector. Our curriculum spans key areas including:</p>
+        <div class="row">
+            <div class="courseCol">
+                <h3><a href="Web pages/BCOM.html" class="heroBtn redBtn">BCOM</a></h3>
+                <p> This degree covers key areas such as programming, software development, data structures, algorithms, and cybersecurity. 
+                     </p><br>
+                     <p>
+                        <h4>Bachelor of Computing</h4><br>
+                        <h4>Duration:</h4>
+                        3 years academic, 1 year internship<br>
+                        <h4>Course Code:</h4>
+                        BCOMP
+                     </p>
+            </div>
+            <div class="courseCol">
+                <h3><a href="Web pages/BIT.html" class="heroBtn redBtn">BIT</a></h3>
+                <p>This degree covers a wide range of topics including network management, 
+                    database systems, web development, cybersecurity, and IT project management.</p>
+                    <p>
+                        <h4>Bachelor of Information Technology</h4><br>
+                        <h4>Duration:</h4>
+                        3 years academic<br>
+                        5 years for part-time individuals
+                        <h4>Course Code:</h4>
+                        BIT
+                     </p>
+                </div>
+            <div class="courseCol">
+                <h3><a href="Web pages/DIT.html" class="heroBtn redBtn">Diploma</a></h3>
+                <p>This program covers essential areas such as network setup and maintenance, database management, programming, 
+                    cybersecurity, and technical support.</p>
+                    <p>
+                        <h4>Diploma of Information Technology</h4><br>
+                        <h4>Duration:</h4>
+                        2 (1/2) years academic, 6 months internship<br>
+                        <h4>Course Code:</h4>
+                        DIT
+                     </p>
+            </div>
+            <div class="courseCol">
+                <h3><a href="Web pages/HC.html" class="heroBtn redBtn">Higher Certificate</a></h3>
+                <p>This certificate covers core topics such as computer systems, basic programming, 
+                    network fundamentals, and information security. </p>
+                    <p>
+                        <h4>Higher Certificate in Information Technology</h4><br>
+                        <h4>Duration:</h4>
+                        1 year<br>
+                        <h4>Course Code:</h4>
+                        HCIT
+                     </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="call">
+        <h1>Enroll in any one of our courses <br>from anywhere in South Africa </h1>
+        <a href="Web pages/contact.html" class="heroBtn">CONTACT US</a>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>a premier institution dedicated to advancing technology and innovation.<br>
+            As a leading technology university, we are committed to cultivating the next<br>
+            generation of tech leaders, innovators, and entrepreneurs. Our mission is to provide a<br>
+            transformative education that equips students with the knowledge, skills,<br> 
+            and experience needed to excel in a rapidly evolving technological landscape.</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-star"></i> By group members</p><!--fix this later-->
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

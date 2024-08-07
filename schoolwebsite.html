@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/schoolwebsite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="JavaScript/Script.js"></script>
+</head>
+<body>
+    <section class="header"> 
+        <nav>
+            <a href="Webpages/schoolwebsite.html"><img src="Images/images.jpeg"></a>
+            <article class="searchContainer"> <!--Also putting in the resuts of the search-->
+                <div class= "searchEngine">
+                    <input type="text" name="SearchInput" id="SearchInput" placeholder="Search course..." >
+                    <i class="fa-solid fa-magnifying-glass" style="color: black;" onclick="SearchCourses()"></i>
+                </div>
+                <div class="searchResult" hidden="true" >
+                    <div id="card" hi>
+                        <h6 font-size="2rem">#</h6>
+                        <p></p>
+        </div>
+        </div>
+        </article>
+            <div class="navLinks" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()"></i><!--check icon functionality-->
+                <ul>
+                    <li><a href="Webpages/schoolwebsite.html">Home</a></li>
+                    <li><a href="Webpages/About.html">About</a></li>
+                    <li><a href="Webpages/course.html">Courses</a></li>
+                    <li><a href="Webpages/blog.html">Blog</a></li>
+                    <li><a href="Webpages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>    
+        <div class="textBox">
+            <h1>Belgium Campus ITversity</h1>
+            <p>
+                Welcome to Belgium Campus ITversity, your gateway to cutting-edge innovation 
+                and technological excellence. Our website serves as a dynamic platform for students, 
+                faculty, and industry professionals to explore the latest advancements in technology, 
+                research breakthroughs, and educational opportunities. At our university, 
+                we are committed to fostering a vibrant tech community that inspires creativity, 
+                nurtures talent, and drives forward the frontiers of knowledge. Whether you're here to learn 
+                about our programs, discover groundbreaking projects, or connect with thought leaders, 
+                Belgium Campus ITversity is your destination for all things tech.
+            </p>
+            <a href="" class="heroBtn">Visit Us to Know More</a>
+        </section>    
+    </div>
+    <!--courses-->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <br>        <div class="row">
+            <div class="courseCol">
+                <h3>Bachelor of Computing</h3>
+                <img src="https://i.pinimg.com/550x/1d/33/0f/1d330ff307e6d7abc7e9245ecddc5daa.jpg" height="120px">
+            </div>
+            <div class="courseCol">
+                <h3>BIT</h3>
+                <img src="https://i.pinimg.com/564x/a1/99/be/a199be3da155cd5a583ccdf86b28c8bd.jpg" height="120px">
+            
+            </div>
+            <div class="courseCol">
+                <h3>Diploma of Information </h3>
+                <img src="https://i.pinimg.com/564x/75/de/f1/75def113e7e3a24b3a4701880090a38a.jpg" height="120px">
+                
+            </div>
+            <div class="courseCol">
+                <h3>Certificate:IT</h3>
+                <img src="https://i.pinimg.com/564x/a2/7f/43/a27f4326cd7aa43ec1429f57b0d5e13e.jpg" height="120px">
+            
+            </div>
+
+            
+        </div>
+    </section>
+    <!--campus-->
+    <section class="campus">
+        <h1>Our Campus Locations </h1>
+        <br>
+        <div class="row">
+            <div class="campusCol">
+                <img src="Images/800f70cd-6e83-4c60-8ee5-8375e1e53fd5.jpeg">
+                <div class="layer">
+                    <h3>PRETORIA</h3>
+                </div>
+            </div>
+            <div class="campusCol">
+                <img src = "Images/LEEZA SOHO.jpeg">
+                <div class="layer">
+                    <h3>KEMPTON PARK</h3>
+                </div>
+            </div>
+            <div class="campusCol">
+                <img src="Images/0e4a498b-4bc5-4797-9815-ef7f33ded074.jpeg">
+                <div class="layer">
+                    <h3>STELLENBOSCH</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--facilities-->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>At Belgium Campus, we provide a range of state-of-the-art facilities to support our students' academic, research, and extracurricular pursuits:</p>
+        <div class="row">
+            <div class="facilitiesCol">
+                <img src="Images/My school libriray.jpeg">
+                <h3>World Class Library</h3>
+                <p>The [University Name] Library is the intellectual heart of our campus,<br> 
+                    offering an expansive and diverse collection of resources to support <br>
+                    the academic and research needs of our students, faculty, and staff. <br>
+                    The library combines traditional scholarly resources with cutting-edge digital tools,<br>
+                    providing a comprehensive platform for learning, research, and discovery.</p><!--get text-->
+            </div>
+            <div class="facilitiesCol">
+                <img src="Images/Web Server's Default Page.jpeg" height="250px">
+                <h3>Classrooms</h3>
+                <p>The Classroom environment is a facility designed to provide students with hands-on <br>
+                    experience in computing and information technology. Equipped with high-performance computers,<br>
+                    this lab offers a robust environment for both learning and research. Each workstation features<br>
+                    dual monitors, allowing for enhanced productivity and multitasking, while ergonomic seating ensures<br> 
+                    comfort during extended sessions.</p><!--get text-->
+            </div>
+            <div class="facilitiesCol">
+                <img src="Images/download.jpeg" height="250px">
+                <h3>Cafeteria</h3>
+                <p>Our cafeteria offers a diverse menu catering to all tastes and dietary preferences,<br> 
+                    ensuring that every member of our university community finds something they love.</p><!--get text-->
+            </div>
+        </div>
+    </section>
+    <!--testimonials-->
+    <section class="testimonials">
+        <h1>Comments from gradutes</h1>
+        <div class="testimonialsCol">
+            <img src="Images//Make Your Day.jpeg">
+            <div>
+                <p>Choosing BC for my graduate studies was one of the best decisions I've ever made. 
+                    The education and experiences I gained here have not only prepared me for a successful 
+                    career in technology but also inspired me to continue learning and pushing the boundaries 
+                    of what's possible. I highly recommend Belgium Campus to anyone looking to advance their career 
+                    in the tech industry."</p>
+                <h3>Suzanne Collins</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+        </div>
+        <div class="testimonialsCol">
+            <img src="Images/Make Your Day.jpeg">
+            <div>
+                <p>The hands-on learning approach and access to cutting-edge facilities, 
+                    like the advanced computing labs and innovation hubs, allowed me to apply theoretical 
+                    knowledge to practical challenges. Working alongside industry professionals and peers 
+                    in collaborative projects was invaluable, giving me a head start in the competitive 
+                    tech industry.</p>
+                <h3>Godfrey James</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </section>
+    <!--call to action-->
+    <section class="call">
+        <h1>Enroll in any one of our courses <br>from anywhere in South Africa </h1>
+        <a href="Webpages/contact.html" class="heroBtn">CONTACT US</a>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>A premier institution dedicated to advancing technology and innovation.<br>
+            As a leading technology university, we are committed to cultivating the next<br>
+            generation of tech leaders, innovators, and entrepreneurs. Our mission is to provide a<br>
+            transformative education that equips students with the knowledge, skills,<br> 
+            and experience needed to excel in a rapidly evolving technological landscape.</p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        
+        <!--Group members-->
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Made by <i class="fa fa-star"></i> <br>
+            Tshegofatso Mashego (600627) <br>
+            Neo Rankapole (600563) <br>
+            Itumeleng Kekana (601335) <br>
+            Tinyiko Mnisi (600311) <br>
+        </p>
+    </section>
+
+<!--JS for menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
